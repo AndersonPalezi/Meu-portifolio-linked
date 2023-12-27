@@ -1,0 +1,169 @@
+<!DOCTYPE html> <!-- Início do documento HTML -->
+<html lang="pt-br"> <!-- Definição do idioma principal do documento (Português Brasileiro) -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Especificação da codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Configuração de visualização responsiva -->
+  <link rel="stylesheet" href="./assets/css/style.css"> <!-- Link para o arquivo de estilo externo -->
+  <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Pré-conexão para otimizar o carregamento de fontes -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet"> <!-- Link para a fonte 'Josefin Sans' do Google Fonts -->
+  <!-- Link para a biblioteca Font Awesome (versão 5.15.3) com integridade e crossorigin -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Portfólio</title> <!-- Título da página exibido na barra de título do navegador -->
+</head>
+
+<body>
+  <!---Cabeçalho-Main-->
+  <div class="background">
+    <nav>
+      <h2 class="logo">Portfólio<br><span>Dev</span></h2><!--Logo-->
+      <ul class="cabeçalho-link">
+        <li><a href="#sobre-mim">Sobre mim</a></li>
+        <li><a href="#minhas-habilidades">Minhas habilidades</a></li>
+        <li><a href="#agradecimentos">Agradeçimentos</a></li>
+      </ul><!--cabeçalho-link-->
+      <a href="https://github.com/AndersonPalezi?tab=repositories" target="github" class="btn">Repósitorio Git</a>
+    </nav>
+    <div class="Main">
+      <h4>Ola, meu nome é</h4>
+      <h1>Anderson <span>Palezi</span></h1>
+      <h3>Eu sou um desenvolvedor web</h3>
+      <div class="Container-btn">
+        <form action="https://formsubmit.co/andersonhagna@hotmail.com" method="post">
+          <label><span>Nome:</span></label>
+          <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+          <label><span>email:</span></label>
+          <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+          <label><span>Mensagem:</span></label>
+          <textarea name="message" cols="30" rows="10" placeholder="Digite sua opiniao" required></textarea>
+          <button type="submit">Enviar</button>
+
+          <input type="hidden" name="accessKey" value="fec25f16a12d042e304d564a7b11b551">
+          <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+        </form>
+      </div><!--Container-btn-->
+    </div><!--Main-->
+  </div><!--background-->
+  <!--Começo-da-seção-sobre-->
+
+  <section id="sobre-mim" class="background-color-Sobre">
+    <div class="main-sobre">
+      <img src="./assets/img/Usuario.png">
+      <div class="Text-sobre">
+        <h2>Sobre-Mim</h2>
+        <h5>Desenvolvedor <span>& designer</span></h5>
+        <p>O desenvolvedor front-end é responsável por criar a
+          interface de usuário e garantir que a experiência do usuário seja agradável
+          e eficiente. Isso envolve trabalhar com tecnologias web como HTML, CSS e
+          JavaScript para desenvolver o layout, o estilo e a interatividade de um site ou aplicativo,
+          continuo meus estudo e me aprimorando mais a cada dia em breve atualizarei
+          aqui com novas tecnologias com sonho de me tornar melhor</p>
+        <a href="https://api.whatsapp.com/send?phone=+5537991707610&text=Seja+Bem+Vindo%21" target="_blank">
+          <button type="button">Conversar</button><!--button--></a>
+      </div><!--Text-sobre-->
+    </div><!--main-sobre-->
+  </section><!--background-color-Sobre-->
+  <!--Começo-da-seção-nossos-serviços-->
+  <div class="grafico">
+    <h2 class="title">Gráfico <span>Github</span></h2>
+    <div class="github">
+      <img src="./assets/img/g-desempenho.png" alt="linguagens">
+      <img  src="./assets/img/grafico.png" alt="grafico">
+    </div>
+  </div>
+  <div id="minhas-habilidades" class="Container-serviços">
+    <div class="title">
+      <h2>Minhas Habilidades<br><span>Front-end</span></h2>
+    </div><!--title-->
+
+    <div class="Caixa">
+      <div class="Card">
+        <i class="fab fa-html5"></i>
+        <h5>HTML</h5>
+        <div class="Paragrafo-button">
+          <p> HTML (Hypertext Markup Language),
+            abaixo estão alguns conceitos básicos e estrutura típica de uma página HTML.
+            O HTML é a linguagem de marcação usada para criar a estrutura básica de uma página web. </p>
+          <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/display" target="_blank">
+            <button type="button">Ler Mais</button><!--button--></a>
+        </div><!--Paragrafo-button-->
+      </div><!--Card-->
+      <div class="Card">
+        <i class="fab fa-css3-alt"></i>
+        <h5>CSS</h5>
+        <div class="Paragrafo-button">
+          <p>CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para controlar
+            a apresentação visual de documentos HTML. Aqui estão alguns conceitos básicos de
+            CSS e um exemplo simples: </p>
+          <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/dd" target="_blank">
+            <button type="button">Ler Mais</button><!--button--></a>
+        </div><!--Paragrafo-button-->
+      </div><!--Card-->
+
+      <div class="Card">
+
+        <i id="js" class="fab fa-js"></i>
+        <h5>Javascript</h5>
+        <div class="Paragrafo-button">
+          <p>JavaScript é uma linguagem de programação de alto nível que é amplamente
+            utilizada para criar interatividade em páginas web </p>
+          <br>
+          <br>
+          <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction" target="_blank">
+            <button type="button">Ler Mais</button><!--button--></a>
+        </div><!--Paragrafo-button-->
+      </div> <!--card-->
+      <div class="Card">
+
+        <i id="js" class="fab fa-github"></i>
+        <h5>Github</h5>
+        <div class="Paragrafo-button">
+          <p>GitHub é uma plataforma de hospedagem de código-fonte e colaboração que permite que
+            desenvolvedores trabalhem em projetos juntos,
+            contribuam para repositórios e controlem as versões de seu código</p>
+          <br>
+          <a href="https://github.com/" target="_blank">
+            <button type="button">Ler Mais</button><!--button--></a>
+        </div><!--Paragrafo-button-->
+      </div> <!--card-->
+    </div><!--Caixa-->
+  </div><!--Conatiner-serviços-->
+  <!--Contatos-->
+  <div class="me-contate">
+    <p>Vamos conversar para que possamos criar um site bonito e responsivel para você</p>
+    <a href="https://api.whatsapp.com/send?phone=+5537991707610&text=Seja+Bem+Vindo%21" target="_blank">
+      <button type="button">Contato</button><!--button--></a>
+  </div><!--me-contate-->
+
+  <!--Rodapé--->
+  <footer>
+    <h6>Anderson Palezi</h6>
+    <p>Clique no link abaixo para me conheçer melhor</p>
+    <div class="Redes-sociais">
+      <a href="https://github.com/AndersonPalezi" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/anderson_palezi/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/anderson-palezi-968611239/" target="_blank"><i
+          class="fab fa-linkedin"></i></a>
+    </div><!--Redes-sociais-->
+    <div class="Card">
+      <i class="fas fa-thumbs-up"></i>
+      <h5>Agradeçimentos</h5>
+      <br>
+      <div id="agradecimentos" class="Paragrafo-button">
+        Gostaria de agradecer à <span>DevClub, ao Rodolfo Mori e à sua equipe de suporte</span>.
+        Graças a eles, conheci o mundo da programação e aprender de maneira mais fácil e eficaz.
+      </div>
+    </div>
+    <br>
+    <p class="end">CopyRight@2023 By Anderson Palezi</p>
+  </footer>
+
+</body>
+<script src="./assets/script/script.js"></script>
+
+</html>
