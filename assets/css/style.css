@@ -1,23 +1,34 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
-   
+
 }
 
-.background{
-    
+.background {
+
     background-size: cover;
-    background-image: url(https://bit.ly/4aAqe4y);
-    background-position:center;
+    background-position: center;
     height: 72vh;
     width: 100%;
-    
-
 }
-
-nav{
+/* Resetando a margem e o padding padrão */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo para a imagem do logo */
+  .background img.logo {
+    position: absolute;
+    z-index: -1; /* Ajuste este valor conforme necessário para garantir que a imagem fique atrás de todos os elementos */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 72vh;
+  }
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,35 +37,36 @@ nav{
     padding-right: 8%;
 }
 
-.logo{
+.logo {
     color: #fff;
     font-size: 35px;
     cursor: pointer;
     letter-spacing: 1px;
 }
-span{
+
+span {
     color: #f9003280;
 }
 
-nav ul li{
+nav ul li {
     list-style-type: none;
     display: inline-block;
-    padding: 10px  25px;
+    padding: 10px 25px;
 }
 
-nav ul li a{
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: #f9003280;
     transform: .4s;
 }
 
-.btn{
+.btn {
     background-color: #f90032c9;
     color: #fff;
     text-decoration: none;
@@ -65,34 +77,34 @@ nav ul li a:hover{
     transition: transform .4s;
 }
 
-.btn:hover{
+.btn:hover {
     transform: scale(1.2);
 }
 
-.Main{
+.Main {
     position: absolute;
     top: 50%;
     left: 8%;
     transform: translateY(-50%);
 }
 
-.Main span{
+.Main span {
     color: #f9003280;
 }
 
-h1{
+h1 {
     color: #fff;
     margin: 20px 0px 20px;
     font-size: 75px;
 }
 
-h4{
+h4 {
     color: rgba(213, 208, 213, 0.8);
     letter-spacing: 2px;
     font-size: 20px;
 }
 
-h3{
+h3 {
     color: #fff;
     font-size: 25px;
     margin-bottom: 50px;
@@ -100,10 +112,14 @@ h3{
 
 .Container-btn form {
     width: 100%;
-    max-width: 100%; /* Defina a largura máxima do formulário conforme necessário */
-    margin: 2px auto; /* Centraliza o formulário na página */
-    display: flex; /* Utiliza o modelo flex para alinhar os itens */
-    justify-content: center; /* Centraliza os itens horizontalmente */
+    max-width: 100%;
+    /* Defina a largura máxima do formulário conforme necessário */
+    margin: 2px auto;
+    /* Centraliza o formulário na página */
+    display: flex;
+    /* Utiliza o modelo flex para alinhar os itens */
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
     align-items: center;
     cursor: pointer;
 }
@@ -111,58 +127,65 @@ h3{
 
 .Container-btn form input,
 .Container-btn form textarea {
-    width: 250px; /* Largura fixa em pixels ou outra unidade desejada */
-    margin-right: 50px; /* Adiciona um espaço entre os campos */
+    width: 250px;
+    /* Largura fixa em pixels ou outra unidade desejada */
+    margin-right: 50px;
+    /* Adiciona um espaço entre os campos */
     padding: 8px 2px 5px 5px;
     border: 2px solid #f9003280;
     border-radius: 30px;
     cursor: pointer;
     outline: none;
     margin: 10px;
-    resize: none;/*você está especificando que o usuário não pode redimensionar manualmente o elemento.*/
+    resize: none;
+    /*você está especificando que o usuário não pode redimensionar manualmente o elemento.*/
 }
+
 .Container-btn form input:last-child {
-    margin-right: 10px; /* Remove a margem à direita do último campo */
+    margin-right: 10px;
+    /* Remove a margem à direita do último campo */
 }
 
 .Container-btn form textarea {
-    width: 400px; /* Largura fixa em pixels ou outra unidade desejada */
+    width: 400px;
+    /* Largura fixa em pixels ou outra unidade desejada */
     height: 35px;
 }
-.background-color-Sobre{
+
+.background-color-Sobre {
     background-color: #0a0a0a;
     width: 100%;
     padding: 100px 0px;
-    
+
 }
 
-.background-color-Sobre img{
+.background-color-Sobre img {
     width: 430px;
     height: auto;
     border-radius: 100%;
     border: 2px solid #4700f9;
 }
 
-.Text-sobre{
+.Text-sobre {
     width: 550px;
-  }
-
-.main-sobre{
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
-   width: 1130px;
-   margin: 0 auto;
 }
 
-.Text-sobre h2{
+.main-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1130px;
+    margin: 0 auto;
+}
+
+.Text-sobre h2 {
     color: #fff;
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
 
-.Text-sobre h5{
+.Text-sobre h5 {
     color: #fff;
     letter-spacing: 2px;
     font-size: 22px;
@@ -170,7 +193,7 @@ h3{
     text-transform: capitalize;
 }
 
-.Text-sobre p{
+.Text-sobre p {
     color: #fcfc;
     letter-spacing: 1px;
     line-height: 28px;
@@ -178,7 +201,7 @@ h3{
     margin-bottom: 45px;
 }
 
-button{
+button {
     background-color: #f9003280;
     color: #fff;
     text-transform: none;
@@ -187,22 +210,22 @@ button{
     padding: 13px 20px;
     border-radius: 30px;
     transition: .4s;
-    
+
 }
 
-button:hover{
+button:hover {
     background-color: transparent;
     border: 2px solid #4700f9;
     cursor: pointer;
 }
 
-.Container-serviços{
+.Container-serviços {
     background-color: #0a0a0a;
     width: 100%;
     padding: 100px 0px;
 }
 
-.title h2{
+.title h2 {
     color: #fff;
     font-size: 75px;
     width: 1130px;
@@ -210,7 +233,7 @@ button:hover{
     text-align: center;
 }
 
-.Caixa{
+.Caixa {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,9 +249,12 @@ button:hover{
     margin: 15px;
     position: relative;
     text-align: center;
-    display: flex; /* Adiciona a propriedade flex para centralizar verticalmente */
-    flex-direction: column; /* Alinha os itens em coluna */
-    justify-content: center; /* Centraliza os itens verticalmente */
+    display: flex;
+    /* Adiciona a propriedade flex para centralizar verticalmente */
+    flex-direction: column;
+    /* Alinha os itens em coluna */
+    justify-content: center;
+    /* Centraliza os itens verticalmente */
     border: 2px solid #4700f9;
 }
 
@@ -240,7 +266,7 @@ button:hover{
     color: #4700f9;
 }
 
-h5{
+h5 {
     color: #fff;
     font-size: 23px;
     margin-bottom: 15px;
@@ -265,21 +291,22 @@ h5{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
 }
 
-.me-contate p{
+.me-contate p {
     color: #fff;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 25px;
 }
-footer h6{
+
+footer h6 {
     font-size: 35px;
     color: #fff;
 }
 
-footer p{
+footer p {
     color: #fff;
     font-size: 15px;
     width: 500px;
@@ -289,12 +316,12 @@ footer p{
     line-height: 23px;
 }
 
-.Redes-sociais{
+.Redes-sociais {
     display: flex;
-    
+
 }
 
-.Redes-sociais a{
+.Redes-sociais a {
     background-color: #4700f9;
     width: 45px;
     height: 45px;
@@ -310,14 +337,16 @@ footer p{
     flex-direction: row;
 }
 
-.Redes-sociais a:hover{
+.Redes-sociais a:hover {
     transform: scale(1.2);
     transition: .3s;
 }
+
 footer {
     position: relative;
     width: 100%;
-    min-height: 400px; /* Adicione uma altura mínima ao rodapé para evitar sobreposição com o conteúdo */
+    min-height: 400px;
+    /* Adicione uma altura mínima ao rodapé para evitar sobreposição com o conteúdo */
     background-color: #101010;
     display: flex;
     flex-direction: column;
@@ -328,41 +357,47 @@ footer {
 .end {
     color: #f90032d8;
     font-size: 14px;
-    margin-top: 20px; /* Ajuste conforme necessário */
-    text-align: center; /* Centralize o texto */
-    position: relative; /* Remova position: absolute */
-    bottom: 0; /* Remova a propriedade bottom */
+    margin-top: 20px;
+    /* Ajuste conforme necessário */
+    text-align: center;
+    /* Centralize o texto */
+    position: relative;
+    /* Remova position: absolute */
+    bottom: 0;
+    /* Remova a propriedade bottom */
 }
+
 .grafico {
-    text-align: center; /* Centraliza o conteúdo */
-    background-color: #191919; /* Adiciona a cor de fundo desejada */
-  
+    text-align: center;
+    /* Centraliza o conteúdo */
+    background-color: #191919;
+    /* Adiciona a cor de fundo desejada */
+
     /* Adicione mais estilos conforme necessário */
-  }
-  
-  .title {
+}
+
+.title {
     font-size: 44px;
     font-weight: bold;
-    color: #f2eeee; /* Cor do texto */
-  
+    color: #f2eeee;
+    /* Cor do texto */
+
     /* Adicione mais estilos conforme necessário */
-  }
-  
-  .github {
+}
+
+.github {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  
-  .github img {
-    width: 100%; /* Garante que as imagens ocupem 100% da largura do contêiner */
-    max-width: 400px; /* Ajuste conforme necessário */
-    margin: 10px; /* Espaçamento entre as imagens */
+}
+
+.github img {
+    width: 100%;
+    /* Garante que as imagens ocupem 100% da largura do contêiner */
+    max-width: 400px;
+    /* Ajuste conforme necessário */
+    margin: 10px;
+    /* Espaçamento entre as imagens */
     border: 2px solid #4700f9;
     border-radius: 5px;
-  }
-  
-  
-    
-  
-  
+}
