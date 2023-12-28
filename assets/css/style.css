@@ -13,21 +13,31 @@
     height: 72vh;
     width: 100%;
 }
+
 /* Resetando a margem e o padding padrão */
-body, h1, h2, h3, p, ul, li {
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
     margin: 0;
     padding: 0;
-  }
-  
-  /* Estilo para a imagem do logo */
-  .background img.logo {
+}
+
+/* Estilo para a imagem do logo */
+.background img.logo {
+    display: flex;
     position: absolute;
-    z-index: -1; /* Ajuste este valor conforme necessário para garantir que a imagem fique atrás de todos os elementos */
+    z-index: -1;
+    /* Ajuste este valor conforme necessário para garantir que a imagem fique atrás de todos os elementos */
     top: 0;
     left: 0;
     width: 100%;
     height: 72vh;
-  }
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -41,7 +51,14 @@ nav {
     color: #fff;
     font-size: 35px;
     cursor: pointer;
-    letter-spacing: 1px;
+    letter-spacing: 1px
+}
+
+.logo-topo {
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 5px;
+    filter: drop-shadow(8px 4px 4px rgba(00, 00, 0, 20));
 }
 
 span {
@@ -55,7 +72,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #f8f4f4;
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
@@ -67,7 +84,7 @@ nav ul li a:hover {
 }
 
 .btn {
-    background-color: #f90032c9;
+    background-color: #f9003280;
     color: #fff;
     text-decoration: none;
     border: 2px solid transparent;
@@ -81,33 +98,49 @@ nav ul li a:hover {
     transform: scale(1.2);
 }
 
-.Main {
+.main {
     position: absolute;
     top: 50%;
     left: 8%;
     transform: translateY(-50%);
 }
 
-.Main span {
+.main span {
     color: #f9003280;
+    filter: drop-shadow(8px 4px 4px rgba(00, 00, 0, 20));
 }
 
 h1 {
     color: #fff;
     margin: 20px 0px 20px;
     font-size: 75px;
+    filter: drop-shadow(8px 4px 4px rgba(00, 00, 0, 20));
+}
+
+h2 {
+    filter: drop-shadow(8px 4px 4px rgba(00, 00, 0, 20));
+}
+
+span {
+    filter: drop-shadow(8px 4px 4px rgba(00, 00, 0, 20));
 }
 
 h4 {
-    color: rgba(213, 208, 213, 0.8);
+    color: rgb(244, 244, 244);
     letter-spacing: 2px;
     font-size: 20px;
+    filter: drop-shadow(8px 4px 4px rgba(00, 00, 0, 20));
+}
+
+h5 {
+    filter: drop-shadow(8px 4px 4px rgba(00, 00, 0, 20));
 }
 
 h3 {
     color: #fff;
     font-size: 25px;
     margin-bottom: 50px;
+    filter: drop-shadow(8px 4px 4px rgba(00, 00, 0, 20));
 }
 
 .Container-btn form {
@@ -122,6 +155,7 @@ h3 {
     /* Centraliza os itens horizontalmente */
     align-items: center;
     cursor: pointer;
+    filter: drop-shadow(8px 4px 4px rgba(00, 00, 0, 20));
 }
 
 
@@ -153,6 +187,7 @@ h3 {
 }
 
 .background-color-Sobre {
+    display: flex;
     background-color: #0a0a0a;
     width: 100%;
     padding: 100px 0px;
@@ -160,7 +195,9 @@ h3 {
 }
 
 .background-color-Sobre img {
-    width: 430px;
+    display: flex;
+    width: 370px;
+    margin-right: 200px;
     height: auto;
     border-radius: 100%;
     border: 2px solid #4700f9;
@@ -176,13 +213,16 @@ h3 {
     justify-content: space-around;
     width: 1130px;
     margin: 0 auto;
+
 }
 
 .Text-sobre h2 {
+    display: flex;
     color: #fff;
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
+
 }
 
 .Text-sobre h5 {
@@ -194,7 +234,9 @@ h3 {
 }
 
 .Text-sobre p {
-    color: #fcfc;
+    display: flex;
+    justify-content: end;
+    color: rgb(243, 242, 243);
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
@@ -210,6 +252,7 @@ button {
     padding: 13px 20px;
     border-radius: 30px;
     transition: .4s;
+    filter: drop-shadow(8px 4px 4px rgba(00, 00, 0, 20));
 
 }
 
@@ -226,11 +269,20 @@ button:hover {
 }
 
 .title h2 {
+    display: flex;
     color: #fff;
     font-size: 75px;
     width: 1130px;
     margin: 30px auto;
     text-align: center;
+}
+
+.title-git {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 75px;
 }
 
 .Caixa {
@@ -266,10 +318,18 @@ button:hover {
     color: #4700f9;
 }
 
+p {
+    color: #f4f1f1;
+    display: flex;
+    justify-content: center;
+}
+
 h5 {
-    color: #fff;
+    color: #f90032d8;
     font-size: 23px;
     margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 .Paragrafo-button {
@@ -318,6 +378,7 @@ footer p {
 
 .Redes-sociais {
     display: flex;
+    filter: drop-shadow(8px 4px 4px rgba(00, 00, 0, 20));
 
 }
 
@@ -372,17 +433,14 @@ footer {
     /* Centraliza o conteúdo */
     background-color: #191919;
     /* Adiciona a cor de fundo desejada */
-
-    /* Adicione mais estilos conforme necessário */
 }
 
 .title {
+    display: flex;
     font-size: 44px;
     font-weight: bold;
     color: #f2eeee;
     /* Cor do texto */
-
-    /* Adicione mais estilos conforme necessário */
 }
 
 .github {
@@ -400,4 +458,100 @@ footer {
     /* Espaçamento entre as imagens */
     border: 2px solid #4700f9;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+    .Container-btn {
+        display: none;
+    }
+
+    /*Menu*/
+    .cabeçalho-link {
+        display: none;
+    }
+
+    .main-sobre {
+        flex-direction: column;
+    }
+
+    .main h3 {
+        font-size: 20px;
+    }
+
+    .Text-sobre h2 {
+        font-size: 50px;
+        padding: 30px 3%;
+        margin-left: 40px;
+    }
+
+    .Text-sobre h5 span {
+        margin-right: 150px;
+    }
+
+    .Text-sobre p {
+        font-size: 20px;
+        align-self: start;
+        display: inline-block;
+        text-align: center;
+        height: 35px;
+        width: 340px;
+        position: relative;
+        text-align: center;
+        display: flex;
+        display: inline-block;
+        text-align: center;
+        margin: 2px 10px 10px 15px;
+    }
+
+    .converse {
+        display: flex;
+        margin-left: 140px;
+        margin-top: 20px;
+    }
+
+    .github img {
+        display: flex;
+        align-items: center;
+        max-width: 350px;
+    }
+
+    .title h2 {
+        display: flex;
+        flex-direction: column;
+        font-size: 35px;
+        display: flex;
+    }
+
+    .title-git {
+        font-size: 35px;
+        padding: 10px 10px;
+    }
+
+    .me-contate p {
+        font-size: 25px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    footer h6 {
+        color: #f90032d8;
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin-left: 20px;
+        padding: 2px 2px; /* Espaçamento interno menor para dispositivos menores */
+    }
+
+    .background h2 {
+        font-size: 30px;
+    }
+    .background img.logo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+
+
 }
