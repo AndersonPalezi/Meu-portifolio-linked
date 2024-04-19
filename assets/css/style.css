@@ -7,7 +7,6 @@
 }
 
 .background {
-
     background-size: cover;
     background-position: center;
     height: 72vh;
@@ -15,13 +14,7 @@
 }
 
 /* Resetando a margem e o padding padrão */
-body,
-h1,
-h2,
-h3,
-p,
-ul,
-li {
+body,h1,h2,h3,p,ul,li {
     margin: 0;
     padding: 0;
 }
@@ -42,7 +35,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 45px;
+    padding: 5px;
     padding-left: 8%;
     padding-right: 8%;
 }
